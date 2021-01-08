@@ -1,0 +1,22 @@
+books {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+}
+heading {
+    color: rgb(0, 255, 0);
+    font-size: 40px;
+    background-color: rgb(0, 0, 0);
+}
+heading,
+title,
+author,
+publisher,
+edition,
+price {
+    display: block;
+}
+title {
+    font-size: 25px;
+    font-weight: bold;
+}
