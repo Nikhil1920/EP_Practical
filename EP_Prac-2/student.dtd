@@ -1,3 +1,4 @@
+<!ELEMENT studentlist (student*)>
 <!ELEMENT student (id, regno, name, avg, dob, time, mobileno, distinction) >
 <!ELEMENT id (#PCDATA)>
 <!ELEMENT regno (#PCDATA)>
