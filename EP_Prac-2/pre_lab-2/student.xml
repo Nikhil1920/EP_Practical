@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="prestyles.css"?>
+<studentlist>
+    <student>
+        <id>66</id>
+        <regno>1920</regno>
+        <name>Nikhil</name>
+        <avg>98</avg>
+        <dob>27-05-2002</dob>
+        <time>2:00 PM</time>
+        <mobileno>456456</mobileno>
+        <distinction>Pass</distinction>
+    </student>
+    <student>
+        <id>66</id>
+        <regno>1920</regno>
+        <name>Nikhil</name>
+        <avg>98</avg>
+        <dob>27-05-2002</dob>
+        <time>2:00 PM</time>
+        <mobileno>456456</mobileno>
+        <distinction>Pass</distinction>
+    </student>
+    <student>
+        <id>66</id>
+        <regno>1920</regno>
+        <name>Nikhil</name>
+        <avg>98</avg>
+        <dob>27-05-2002</dob>
+        <time>2:00 PM</time>
+        <mobileno>456456</mobileno>
+        <distinction>Pass</distinction>
+    </student>
+    <student>
+        <id>66</id>
+        <regno>1920</regno>
+        <name>Nikhil</name>
+        <avg>98</avg>
+        <dob>27-05-2002</dob>
+        <time>2:00 PM</time>
+        <mobileno>456456</mobileno>
+        <distinction>Pass</distinction>
+    </student>
+    <student>
+        <id>66</id>
+        <regno>1920</regno>
+        <name>Nikhil</name>
+        <avg>98</avg>
+        <dob>27-05-2002</dob>
+        <time>2:00 PM</time>
+        <mobileno>456456</mobileno>
+        <distinction>Pass</distinction>
+    </student>
+</studentlist>

@@ -1,0 +1,22 @@
+studentlist {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+}
+
+id,
+regno,
+name,
+avg,
+dob,
+time,
+mobileno,
+distinction {
+    display: block;
+}
+id {
+    margin-top: 14px;
+    font-size: 25px;
+    font-weight: bold;
+    color: green;
+}
