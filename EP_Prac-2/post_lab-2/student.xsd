@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<xs:schema xmlns:xs = "http://www.w3.org/2001/XMLSchema">
+    <xs:element name = 'studentlist'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name = 'student' type = 'StudentType' minOccurs = '0' 
+                maxOccurs = 'unbounded' />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name = "StudentType">
+        <xs:sequence>
+            <xs:element name = "id" type = "xs:positiveInteger"/>
+            <xs:element name = "regno" type = "xs:positiveInteger"/>
+            <xs:element name = "name" type = "xs:string"/>
+            <xs:element name = "avg" type = "xs:positiveInteger"/>
+            <xs:element name = "dob" type = "xs:date"/>
+            <xs:element name = "time" type = "xs:time"/>
+            <xs:element name = "mobileno" type = "xs:positiveInteger"/>
+            <xs:element name = "distinction" type = "xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
