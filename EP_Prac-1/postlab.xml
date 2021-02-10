@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="postlab1styles.css"?>
+<bookstore>
+    <heading>Welcome To Bookstore</heading>
+    <book>
+        <title lang="en">Everyday Italian</title>
+        <author>Giada De Laurentiis</author>
+        <category>cooking</category>
+        <year>2005</year>
+        <price>30.00</price>
+    </book>
+    <book>
+        <title lang="en">Harry Potter</title>
+        <author>J K. Rowling</author>
+        <category>child</category>
+        <year>2005</year>
+        <price>29.99</price>
+    </book>
+    <book>
+        <title lang="en">Learning XML</title>
+        <author>Erik T. Ray</author>
+        <category>web</category>
+        <year>2003</year>
+        <price>39.95</price>
+    </book>
+    <book>
+        <title lang="en">Everyday Indian</title>
+        <author>sanjay kapoor</author>
+        <category>cooking</category>
+        <year>2005</year>
+        <price>30.00</price>
+    </book>
+    <book>
+        <title lang="en">Mockingjay</title>
+        <author>Suzanne Collins</author>
+        <category>Science Fiction</category>
+        <year>2010</year>
+        <price>22.00</price>
+    </book>
+</bookstore>

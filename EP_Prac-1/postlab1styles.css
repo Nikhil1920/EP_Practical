@@ -1,0 +1,23 @@
+bookstore {
+    color: white;
+    background-color: gray;
+    width: 100%;
+}
+heading {
+    color: green;
+    font-size: 40px;
+    background-color: powderblue;
+}
+heading,
+title,
+author,
+category,
+year,
+price {
+    display: block;
+}
+title {
+    font-size: 25px;
+    color: blue;
+    font-weight: bold;
+}
