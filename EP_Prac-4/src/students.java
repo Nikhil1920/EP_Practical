@@ -19,6 +19,7 @@ public class students {
             String query = "CREATE TABLE students (Student_ID NUMBER(10) PRIMARY KEY, Student_Name VARCHAR(255) NOT NULL, Email VARCHAR(255) NOT NULL, Date_of_Birth NUMBER(6))";
             try {
                 stmt.executeUpdate(query);
+                System.out.println("Students table created successfully");
             } catch (Exception e) {
                 System.out.println("Student Table already exists");
             }
@@ -27,6 +28,7 @@ public class students {
             query = "CREATE TABLE workshop (Student_ID NUMBER(10) PRIMARY KEY, contactNumber NUMBER(10) NOT NULL)";
             try {
                 stmt.executeUpdate(query);
+                System.out.println("workshop table created successfully");
             } catch (Exception e) {
                 System.out.println("Workshop Table already exists");
             }
@@ -78,18 +80,20 @@ public class students {
                         while (rs.next())
                             System.out.println(rs.getInt(1) + "  " + rs.getString(2) + "  " + rs.getString(3) + "  "
                                     + formatter.format(rs.getDate(4)));
+                        break;
                     case 4:
                         try {
                             query = "ALTER TABLE workshop ADD (studentName VARCHAR(255), studentEmail VARCHAR(255))";
                             stmt.executeUpdate(query);
+                            System.out.println("workshop table altered successfully");
                         } catch (Exception e) {
-                            System.out.println(e);
+                            System.out.println("Workshop Table already altered");
                         }
                         try {
                             query = "UPDATE workshop t1 SET (StudentName, studentEmail) = (SELECT t2.Student_Name, t2.Email FROM students t2 WHERE t1.Student_ID=t2.Student_ID) WHERE EXISTS (SELECT 1 FROM students t2 WHERE t1.Student_ID=t2.Student_ID )";
                             stmt.executeUpdate(query);
                         } catch (Exception e) {
-                            System.out.println(e);
+                            System.out.println();
                         }
                         rs = stmt.executeQuery("select * from workshop");
                         while (rs.next())
@@ -102,8 +106,13 @@ public class students {
                         notInterestStudentId = scanner.nextInt();
                         PreparedStatement deleteData = con.prepareStatement("DELETE FROM workshop WHERE Student_ID=?");
                         deleteData.setInt(1, notInterestStudentId);
-                        deleteData.executeUpdate();
-                        System.out.println("Student Data deleted successfully");
+                        try {
+                            deleteData.executeUpdate();
+                            System.out.println("Student Data deleted successfully");
+                        } catch (Exception e) {
+                            System.out.println("Error: " + e.getMessage());
+                            System.out.println("Please try again");
+                        }
                         break;
                     case 6:
                         i = 2;

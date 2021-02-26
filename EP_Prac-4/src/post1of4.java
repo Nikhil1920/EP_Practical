@@ -54,9 +54,9 @@ public class post1of4 {
                         break;
                     case 2:
                         ResultSet rs = stmt.executeQuery("select * from wildlife");
+                        System.out.println("Name | Category | image file path | description file path");
                         while (rs.next()) {
                             String category = (rs.getInt(2) == 1) ? "plant" : "animal";
-                            System.out.println("Name | Category | image file path | description file path");
                             System.out.println(rs.getString(1) + " | " + category + " | " + rs.getString(3) + " | "
                                     + rs.getString(4));
                         }

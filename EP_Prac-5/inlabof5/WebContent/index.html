@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/signinstyles.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="container center">
+        <h1>Login to Submit feedback</h1>
+        <form action="LoginServlet" method="POST">
+            <div>
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Your KLmail" required>
+            </div>
+            <div>
+                <label>Password</label>
+                <input type="password" name="password" placeholder="Your Password" required>
+            </div>
+            <div>
+                <button type="submit" value="submit" class="signinbtn">Login</button>
+                <a href="#">Forgot Password?</a>
+            </div>
+        </form>
+        <div>
+            <p>Don't have an account? <a href="./signup.html">Create an Account</a>.</p>
+        </div>
+    </div>
+</body>
+
+</html>
