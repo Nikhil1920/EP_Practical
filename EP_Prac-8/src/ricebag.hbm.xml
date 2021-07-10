@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "https://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ <hibernate-mapping>
+ <class name="labof8.RiceBag" table="ricebag">
+ <id name = "id" type = "int" column = "id"/>
+      
+      <property name = "quantity" column = "quantity" type = "int"/>
+      <property name = "cost" column = "cost" type = "double"/>
+      <property name = "type" column = "type" type = "string"/>
+ </class>
+ </hibernate-mapping>

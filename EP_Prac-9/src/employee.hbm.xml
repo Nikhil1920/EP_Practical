@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="inlabof9.Employee">
+<id name="empId">
+<generator class="increment"></generator>
+</id>
+<property name="empName"></property>
+<property name="empSalary"></property>
+<property name="empAddress"></property>
+</class>
+</hibernate-mapping>

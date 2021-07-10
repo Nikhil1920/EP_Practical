@@ -66,4 +66,42 @@ public class LoginDao {
 		}
 		return "Error";
 	}
+	
+	public boolean submitted(String mail) {
+		boolean submitted = false;
+		
+		String dbUserName = "system";
+
+        String dbUserPassword = "nikhil";
+        
+        String oracleurl = "jdbc:oracle:thin:@localhost:1521:XE";
+        
+        String query = "SELECT submitted FROM farewell WHERE email=?";
+        
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			
+            Connection con = DriverManager.getConnection(oracleurl, dbUserName,dbUserPassword);
+            
+			PreparedStatement prepst = con.prepareStatement(query);
+			
+			prepst.setString(1, mail);
+			
+			ResultSet rs = prepst.executeQuery();
+			
+			rs.next();
+			
+			String output = rs.getString(1);
+			
+			if (output.equals("Y")) {
+				submitted = true;
+			}
+			
+			return submitted;
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return submitted;
+	}
 }

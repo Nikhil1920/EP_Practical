@@ -34,7 +34,7 @@ public class submitfeedback extends HttpServlet {
 		try {
 			if(submitfeedbackDao.submit(mail, feedback)) {
 				out.print("<h1>Your feedback submitted succesfully</h1> <br> You can submit again to change your feedback");
-		    	RequestDispatcher rd=request.getRequestDispatcher("/welcome.jsp");  
+		    	RequestDispatcher rd=request.getRequestDispatcher("/submitted.jsp");  
 		        rd.include(request, response);
 			} else {
 				out.print("Sorry, Try again");

@@ -37,8 +37,12 @@ public class LoginServlet extends HttpServlet {
 	    if(loginDao.check(email, password)) {
 	    	HttpSession session = request.getSession();
 	    	session.setAttribute("useremail", email);
+	    	if(loginDao.submitted(email)) {
+	    		response.sendRedirect("submitted.jsp");
+	    	} else {
 	    	response.sendRedirect("welcome.jsp");
-	    } else {
+	    	}
+	    	} else {
 	    	out.print("Sorry, username or password error!");
 	    	RequestDispatcher rd=request.getRequestDispatcher("/index.html");  
 	        rd.include(request, response);
